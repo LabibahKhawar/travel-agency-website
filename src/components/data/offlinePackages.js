@@ -1,0 +1,38 @@
+export const offlinePackages = [
+  {
+    id: "off1",
+    title: "Hunza Valley Tour",
+    location: "Hunza",
+    duration_days: 5,
+    price_pkr: 85000,
+    images: ["/assets/packages/hunza.jpg"],
+    featured: true,
+  },
+  {
+    id: "off2",
+    title: "Skardu Adventure Trip",
+    location: "Skardu",
+    duration_days: 7,
+    price_pkr: 120000,
+    images: ["/assets/packages/skardu.jpg"],
+    featured: true,
+  },
+  {
+    id: "off3",
+    title: "Swat Family Tour",
+    location: "Swat",
+    duration_days: 4,
+    price_pkr: 65000,
+    images: ["/assets/packages/swat.jpg"],
+    featured: true,
+  },
+  {
+    id: "off4",
+    title: "Naran Kaghan Tour",
+    location: "Naran",
+    duration_days: 4,
+    price_pkr: 70000,
+    images: ["/assets/packages/naran.jpg"],
+    featured: true,
+  },
+];
