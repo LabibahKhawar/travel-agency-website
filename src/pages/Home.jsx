@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import PackagesCarousel from "../components/PackagesCarousel";
-import HotelSection from "../components/HotelSection"; 
-import ActivitiesSection from "../components/Activities";
-import DestinationsCarousel from "../components/DestinationsCarousel";
-import AboutUs from "../components/AboutUs"; 
+import PackagesCarousel from "../components/PackagesCarousel.jsx";
+import HotelSection from "../components/HotelSection.jsx";
+import ActivitiesSection from "../components/Activities.jsx";
+import DestinationsCarousel from "../components/DestinationsCarousel.jsx";
+import AboutUs from "../components/AboutUs.jsx";
 import img1 from "../assets/hero1.jpg";
 import img2 from "../assets/hero2.jpg";
 import img3 from "../assets/hero3.jpg";
@@ -31,30 +31,29 @@ export default function Home() {
             style={{ backgroundImage: `url(${img})` }}
           />
         ))}
-        
+
         <div className="heroOverlay"></div>
 
         <div className="heroContent">
           <span className="welcomeBadge">🌲 Explore Northern Pakistan</span>
-          
+
           <h1 className="heroTitle">
             Journey to the <br />
             <span>Mountains</span>
           </h1>
-          
+
           <p className="heroSub">
-            Discover the hidden gems of  Swat, Hunza, Skardu and Naran with our premium travel services.
+            Discover the hidden gems of Swat, Hunza, Skardu and Naran with our premium travel services.
           </p>
-          
+
           <div className="buttonGroup">
-             <Link to="/packages" className="btn btnPrimary">View Packages</Link>
-           
+            <Link to="/packages" className="btn btnPrimary">View Packages</Link>
           </div>
 
           <div className="sliderDots">
             {heroImages.map((_, index) => (
-              <span 
-                key={index} 
+              <span
+                key={index}
                 className={`dot ${index === currentSlide ? "activeDot" : ""}`}
                 onClick={() => setCurrentSlide(index)}
               ></span>
@@ -62,6 +61,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="section bg-light fix-bottom-gap">
         <div className="container">
           <div className="sectionHeader">
@@ -98,26 +98,30 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="section fix-top-gap">
         <div className="container">
-           <PackagesCarousel />
+          <PackagesCarousel />
         </div>
       </div>
-      <div className="section" style={{ paddingTop: '10px' }}>
+
+      <div className="section" style={{ paddingTop: "10px" }}>
         <div className="container">
           <HotelSection count={packagesCount} />
         </div>
       </div>
+
       <div className="section bg-light">
         <div className="container">
           <ActivitiesSection count={packagesCount} />
         </div>
       </div>
+
       <div className="section">
         <DestinationsCarousel count={packagesCount} />
       </div>
+
       <AboutUs />
-      
     </>
   );
 }
