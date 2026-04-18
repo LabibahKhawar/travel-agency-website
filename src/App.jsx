@@ -1,15 +1,17 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Activities from "./components/Activities"; 
-import Home from "./pages/Home";
-import Packages from "./pages/Packages";
-import PackageDetails from "./pages/PackageDetails";
-import Contact from "./pages/Contact";
-import Destinations from "./pages/Destinations";
-import DestinationDetails from "./pages/DestinationDetails";
-import PlanTour from "./pages/PlanTour"; 
-import Hotels from "./pages/Hotels";
+
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
+import Activities from "./components/Activities.jsx";
+
+import Home from "./pages/Home.jsx";
+import Packages from "./pages/Packages.jsx";
+import PackageDetails from "./pages/PackageDetails.jsx";
+import Contact from "./pages/Contact.jsx";
+import Destinations from "./pages/Destinations.jsx";
+import DestinationDetails from "./pages/DestinationDetails.jsx";
+import PlanTour from "./pages/PlanTour.jsx";
+import Hotels from "./pages/Hotels.jsx";
 
 export default function App() {
   return (
